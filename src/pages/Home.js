@@ -15,12 +15,12 @@ import BestProperties from '../components/BestProperties'
 export default function Home() {
     return (
         <>
-            <div className='content-container-parent'>
-                 <NavigationBar />
-                 <HeroSection />
+            <div className='content-container-parent'> 
+                <NavigationBar />
                 <div className='content-container'>
+                    <HeroSection />
                     <HomesForYou/>
-                    {/* <FindProperties/> */}
+                    <FindProperties/>
                     <ChooseUs/>
                     <BestProperties/>
                     <LuxuryHomes/>

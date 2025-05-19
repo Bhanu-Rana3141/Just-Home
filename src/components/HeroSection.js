@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Button, Form, InputGroup } from 'react-bootstrap';
-import { FaSearch } from 'react-icons/fa';
+import { GoSearch } from "react-icons/go";
 import heroImg from '../assets/images/hero-img.jpg'
 
 export default function HeroSection() {
@@ -32,16 +32,12 @@ export default function HeroSection() {
                         ))}
                     </div>
 
-                    <InputGroup className="search-box">
-                        <Form.Control
-                            type="text"
-                            placeholder="Enter Name, Keywords..."
-                            className="form-input-box"
-                        />
-                        <InputGroup.Text className='search-icon-container'>
-                            <FaSearch className="search-icon" />
-                        </InputGroup.Text>
-                    </InputGroup>
+                    <div className='search-bar'>
+                        <input type='text' placeholder='Enter Name, Keywords...'/>
+                        <div className='search-icon-container'>
+                            <GoSearch className='search-icon'/>
+                        </div>
+                    </div>
                 </div>
             </Container>
         </div>

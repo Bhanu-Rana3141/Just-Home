@@ -12,9 +12,10 @@ body {
 .navbar {
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 30px;
     z-index: 999;
     transition: background-color 0.3s ease-in-out;
+    padding: 20px;
 }
 
 .navbar-scrolled {
@@ -115,13 +116,11 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh;
 }
 
 .hero-img {
     width: 100%;
-    /* height: auto; */
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -160,6 +159,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
+    font-size: 14px;
 }
 
 .tab {
@@ -187,49 +187,49 @@ body {
     width: 100%;
 }
 
-.search-box {
+.search-bar {
+    margin-top: 20px;
     width: 100%;
     position: relative;
-    display: flex;
-    justify-content: center;
 }
 
-.form-input-box {
-    padding: 12px 0 12px 20px;
+.search-bar input {
+    width: 100%;
+    max-width: 37%;
+    padding: 15px 22px;
     border-radius: 70px;
-    max-width: 33%;
-    outline: none;
     border: none;
+    outline: none;
+    font-size: 12px;
+    color: #1A1A1A;
 }
 
-.form-input-box::placeholder {
+.search-bar input::placeholder {
     color: #1A1A1A;
-    font-size: 14px;
 }
 
 .search-icon-container {
-    border-top-right-radius: 70px;
-    border-bottom-right-radius: 70px;
+    height: 40px;
+    width: 40px;
     background-color: #E7C873;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 31.9%;
+    bottom: 4px;
 }
 
 .search-icon {
-    height: 20px;
-    width: 20px;
     color: #1A1A1A;
-    padding-right: 5px;
-}
-
-.search-box .form-control:focus {
-    border: none;
-    box-shadow: none;
-    outline: none;
 }
 
 /* HOMES FOR YOU */
 .homes-for-you-container {
     background-color: #F6F8FA;
     padding: 140px;
+    margin-top: 20px;
     border-radius: 24px;
 }
 
@@ -354,6 +354,43 @@ body {
     border-right: 1px solid #E9E9E9;
     padding-right: 10px;
     margin-right: 10px;
+}
+
+/* FIND PROPERTIES CONTAINER */
+.find-properties-container {
+    padding: 140px;
+}
+
+.find-property-parent {
+    position: relative;
+}
+
+.find-property-img {
+    height: 295px;
+}
+
+.find-property-img img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.find-property-container {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.find-property-text {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.find-property-place {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 /*  CHOOSE US */
@@ -735,6 +772,20 @@ body {
     color: #1A1A1A;
     font-weight: 500;
     cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Active underline that fits text width */
+.common-links.active::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1A1A1ACC; /* Your overlay color */
 }
 
 /* Wrapping container for real estate links */
@@ -1031,6 +1082,7 @@ body {
     .navbar {
         background-color: #000000;
         position: fixed;
+        top: 0;
     }
 
     .hero-img {
