@@ -360,6 +360,9 @@ body {
     margin-right: 10px;
 }
 
+/* Arrow container style */
+
+
 /* FIND PROPERTIES CONTAINER */
 .find-properties-container {
     padding: 100px;
@@ -441,98 +444,96 @@ body {
     padding: 100px;
 }
 
-.properties-col1-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.common-properties-img-container {
+    width: 100%;
 }
 
-.common-img-properties {
-    width: 100%;
+.common-properties-img-container img {
+    max-width: 100%;
     border-radius: 16px;
 }
 
-.properties-col1-part1 {
-    width: 100%;
-    height: 49%;
+.col-card-height-parent {
+    height: 100%;
+}
+
+.col-card-part-container {
+    background-color: #1A1A1A;
+    border-radius: 16px;
+    padding: 30px 20px;
+    height: 100%;
     position: relative;
 }
 
-.properties1-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    object-fit: cover;
+.col-card-common-color {
+    color: #FFFFFF;
 }
 
-.properties-common-arrow {
-    padding: 8px 20px;
+.col-card-heading {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.col-card-properties {
+    font-size: 14px;
+}
+
+.col-card-description {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.col-card-right-icon-container {
+    height: 30px;
+    width: 30px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.properties1-img-parent {
+    position: relative;
+}
+
+.properties1-icon-common-container {
+    height: 40px;
+    width: 65px;
     background-color: rgba(26, 26, 26, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    color: #FFFFFF;
+    top: 43%;
     cursor: pointer;
 }
 
-.properties-left-arrow {
-    top: 40%;
-    left: 10px;
-}
-
-.properties-right-arrow {
-    top: 40%;
-    right: 10px;
-}
-
-.properties-col1-part2 {
-    width: 100%;
-    height: 49%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.properties-col1-part2-card {
-    background-color: #1A1A1A;
-    width: 49%;
-    height: 100%;
-    padding: 20px;
-    border-radius: 16px;
-    position: relative;
-}
-
-.properties-card-text {
+.properties1-icon-color {
     color: #FFFFFF;
 }
 
-.properties-heading {
-    font-size: 28px;
+.properties1-left-arrow-container {
+    left: 10px;
 }
 
-.properties-text {
-    font-size: 13px;
+.properties1-right-arrow-container {
+    right: 10px;
 }
 
-.properties-description {
-    font-size: 11px;
-    margin-top: 20px;
-}
-
-.properties2-img-container {
-    width: 49%;
-    height: 100%;
+.properties2-img-parent {
     position: relative;
 }
 
-.properties2-img-container img {
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
-.play-btn {
+.play-btn-container {
     height: 50px;
     width: 50px;
     background-color: rgba(26, 26, 26, 0.11);
@@ -552,55 +553,15 @@ body {
     cursor: pointer;
 }
 
-.properties-arrow {
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
-
-.properties-right-icon {
-    color: #1A1A1A;
-    cursor: pointer;
-}
-
-.properties-col2 {
-    position: relative;
-}
-
-.properties3-img-container {
+.properties3-img-parent {
     position: relative;
     overflow: hidden;
 }
 
-.properties3-img {
-    width: 100%;
-}
-
-.properties3-img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom,
-            #00000000 0%,
-            #1A1A1A1A 10%,
-            #1A1A1ACC 80%);
-    z-index: 2;
-    border-radius: 16px;
-}
-
 .sale-featured-btn {
     position: absolute;
-    top: 25px;
-    left: 35px;
+    top: 30px;
+    left: 23px;
     display: flex;
     gap: 8px;
     z-index: 3;
@@ -681,6 +642,22 @@ body {
 
 .properties3-common-number {
     font-size: 12px;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    #00000000 0%,
+    #1A1A1A1A 10%,
+    #1A1A1ACC 80%
+  );
+  border-radius: 16px;
 }
 
 /* LUXURY HOMES */
@@ -1239,10 +1216,6 @@ body {
     .article-news-container {
         padding: 100px 80px;
     }
-
-    .best-properties-container {
-        padding: 100px 80px;
-    }
 }
 
 @media(max-width : 1148px) {
@@ -1267,17 +1240,19 @@ body {
     .hero-content {
         margin-top: 40px;
     }
+
+    .col-card-part-container {
+        padding: 10px 15px;
+    }
+    .col-card-right-icon-container {
+        right: 10px;
+        bottom: 10px;
+    }
 }
 
 @media(max-width : 1082px) {
     .article-news-container {
         padding: 100px 30px;
-    }
-}
-
-@media(max-width : 1026.98px) {
-    .best-properties-container {
-        padding: 100px 50px;
     }
 }
 
@@ -1289,7 +1264,9 @@ body {
         padding: 0;
     }
 
-    .navlink-color, .nav-dropdown, .property-btn {
+    .navlink-color,
+    .nav-dropdown,
+    .property-btn {
         font-size: 11px;
     }
 
@@ -1326,8 +1303,12 @@ body {
         padding: 70px;
     }
 
+    .margin-top-991 {
+        margin-top: 24px;
+    }
+
     .best-properties-container {
-        padding: 100px 30px;
+        padding: 100px 50px;
     }
 
     .find-properties-container {
@@ -1416,6 +1397,10 @@ body {
     .properties-col2 {
         margin-top: 20px;
     }
+
+    .best-properties-container {
+        padding: 100px 30px;
+    }
 }
 
 @media(max-width : 767.98px) {
@@ -1476,6 +1461,7 @@ body {
     .footer-container {
         padding: 20px 40px;
     }
+
     .discover-text {
         margin: 0;
     }
@@ -1483,9 +1469,11 @@ body {
     .input-margin-575 {
         margin-bottom: 30px;
     }
+
     .get-app-text {
         margin-bottom: 10px;
     }
+
     .our-address-contact {
         margin-top: 10px;
         line-height: 20px;
@@ -1503,6 +1491,19 @@ body {
     .copyright {
         font-size: 12px;
     }
+
+    .best-properties-container {
+        padding: 100px 0;
+    }
+
+    .properties2-col-container {
+        margin-top: 24px;
+    }
+
+    .properties3-img-bottom-part  {
+        left: 23px;
+    }
+    
 }
 
 @media(max-width : 558px) {

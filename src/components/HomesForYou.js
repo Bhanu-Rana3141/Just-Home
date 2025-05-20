@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Slider from 'react-slick';
 import HomeCard from './HomeCard';
 import home1 from '../assets/images/home1.jpg'
