@@ -4,7 +4,7 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 
 export default function RealEstateAgent() {
     return (
-        <Container fluid className='mt-5 real-estate-agent-container'>
+        <Container fluid className='real-estate-agent-container'>
             <Row>
                 <Col lg={12}>
                     <div className='agent-container'>

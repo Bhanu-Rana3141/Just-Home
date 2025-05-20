@@ -3,6 +3,10 @@ body {
     height: 100%;
 }
 
+.content-container-parent {
+    width: 100%;
+}
+
 .content-container {
     width: 100%;
     padding: 20px;
@@ -228,7 +232,7 @@ body {
 /* HOMES FOR YOU */
 .homes-for-you-container {
     background-color: #F6F8FA;
-    padding: 140px;
+    padding: 100px;
     margin-top: 20px;
     border-radius: 24px;
 }
@@ -358,7 +362,7 @@ body {
 
 /* FIND PROPERTIES CONTAINER */
 .find-properties-container {
-    padding: 140px;
+    padding: 100px;
 }
 
 .find-property-parent {
@@ -367,19 +371,37 @@ body {
 
 .find-property-img {
     height: 295px;
+    position: relative;
+    overflow: hidden;
 }
 
 .find-property-img img {
     width: 100%;
-    max-height: 100%;
+    height: 100%;
     border-radius: 16px;
     object-fit: cover;
+}
+
+.find-property-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            #1A1A1A00 0%,
+            #1A1A1A1A 10%,
+            #1A1A1ACC 80%);
+    z-index: 1;
+    border-radius: 16px;
 }
 
 .find-property-container {
     position: absolute;
     top: 30px;
     left: 40px;
+    z-index: 2;
 }
 
 .find-property-text {
@@ -390,14 +412,13 @@ body {
 .find-property-place {
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /*  CHOOSE US */
 .choose-us-container {
     background-color: #E7C873;
-    padding: 140px;
-    margin-top: 20px;
+    padding: 100px;
     border-radius: 24px;
 }
 
@@ -417,7 +438,7 @@ body {
 
 /* BEST PROPERTIES */
 .best-properties-container {
-    padding: 140px;
+    padding: 100px;
 }
 
 .properties-col1-container {
@@ -434,6 +455,7 @@ body {
 .properties-col1-part1 {
     width: 100%;
     height: 49%;
+    position: relative;
 }
 
 .properties1-img {
@@ -441,6 +463,27 @@ body {
     height: 100%;
     border-radius: 16px;
     object-fit: cover;
+}
+
+.properties-common-arrow {
+    padding: 8px 20px;
+    background-color: rgba(26, 26, 26, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+    position: absolute;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.properties-left-arrow {
+    top: 40%;
+    left: 10px;
+}
+
+.properties-right-arrow {
+    top: 40%;
+    right: 10px;
 }
 
 .properties-col1-part2 {
@@ -479,6 +522,7 @@ body {
 .properties2-img-container {
     width: 49%;
     height: 100%;
+    position: relative;
 }
 
 .properties2-img-container img {
@@ -486,6 +530,26 @@ body {
     height: 100%;
     border-radius: 16px;
     object-fit: cover;
+}
+
+.play-btn {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(26, 26, 26, 0.11);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.play-btn-icon {
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .properties-arrow {
@@ -506,16 +570,132 @@ body {
     cursor: pointer;
 }
 
+.properties-col2 {
+    position: relative;
+}
+
+.properties3-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.properties3-img {
+    width: 100%;
+}
+
+.properties3-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,
+            #00000000 0%,
+            #1A1A1A1A 10%,
+            #1A1A1ACC 80%);
+    z-index: 2;
+    border-radius: 16px;
+}
+
+.sale-featured-btn {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    display: flex;
+    gap: 8px;
+    z-index: 3;
+}
+
+.sale-btn {
+    background-color: #1F4B43;
+    color: #FFFFFF;
+    border-radius: 33px;
+    border: none;
+    padding: 6px 12px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.featured-btn {
+    background-color: #E7C873;
+    color: #1A1A1A;
+    border-radius: 33px;
+    border: none;
+    padding: 6px 12px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.properties3-img-bottom-part {
+    position: absolute;
+    bottom: 27px;
+    left: 35px;
+    z-index: 3;
+}
+
+.villa-heading {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.villa-location {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.properties3-bottom-container {
+    display: flex;
+    gap: 40px;
+    color: #FFFFFF;
+}
+
+.villa-price {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.properties3-bottom-bedBathSqrt {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-bedBathSqrt-img img {
+    height: 16px;
+    width: 16px;
+}
+
+.properties3-common {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-right: 2px solid #FFFFFF;
+    padding-right: 20px;
+}
+
+.properties3-common:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.properties3-common-number {
+    font-size: 12px;
+}
+
 /* LUXURY HOMES */
 .luxury-homes-container {
-    padding: 100px 140px;
+    padding: 100px 171px;
     background-color: #1F4B43;
-    margin-top: 20px;
     border-radius: 24px;
 }
 
-.luxury-home-img {
+.luxury-home-img-container {
     width: 100%;
+}
+
+.luxury-home-img {
+    max-width: 100%;
     border-radius: 24px;
 }
 
@@ -558,6 +738,7 @@ body {
 .luxury-description {
     color: #FFFFFF;
     font-size: 14px;
+    text-align: justify;
 }
 
 .numbers-container {
@@ -578,7 +759,7 @@ body {
 
 /* CUSTOMERS */
 .customers-container {
-    padding: 140px;
+    padding: 100px;
 }
 
 .customer-common-color {
@@ -659,49 +840,48 @@ body {
     cursor: pointer;
 }
 
-.customer-container-row2 {
-    margin-top: 50px;
+.customer-container-row1 {
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 50px;
 }
 
-.row1-row2-border {
-    border-bottom: 1px solid #E9E9E9;
-    padding: 100px 0 0 0;
+.customer-container-row2 {
+    padding-top: 50px;
 }
 
 .row2-description {
     text-align: center;
 }
 
-.logo-marquee-container {
+.logo-slider-container {
+    margin-top: 50px;
     overflow: hidden;
+    white-space: nowrap;
     width: 100%;
-    margin-top: 40px;
+    background-color: #fff;
 }
 
-.logo-marquee {
+.logo-slider-track {
     display: flex;
-    animation: scroll 10s linear infinite;
-    align-items: center;
+    width: fit-content;
+    animation: scroll 20s linear infinite;
 }
 
-.logo-marquee ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 60px;
+.logo-slide {
+    flex: 0 0 auto;
+    margin: 0 30px;
+    width: 75px;
 }
 
-.logo-marquee-img-parent {
-    width: 70px;
-}
-
-.logo-marquee-img-parent img {
+.logo-slide img {
     max-width: 100%;
+    max-height: 100%;
 }
 
+/* Animation for infinite scroll */
 @keyframes scroll {
     0% {
-        transform: translateX(0%);
+        transform: translateX(0);
     }
 
     100% {
@@ -711,9 +891,8 @@ body {
 
 /* RECENT ARTICLES AND NEWS */
 .article-news-container {
-    padding: 140px;
+    padding: 100px;
     background-color: #F9F9F9;
-    margin-top: 20px;
     border-radius: 24px;
 }
 
@@ -758,7 +937,7 @@ body {
 /* REAL ESTATE */
 .real-estate-container {
     background-color: #FFFFFF;
-    padding: 140px;
+    padding: 70px 100px;
 }
 
 .links-container {
@@ -785,7 +964,7 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #1A1A1ACC; /* Your overlay color */
+    background-color: #1A1A1ACC;
 }
 
 /* Wrapping container for real estate links */
@@ -796,12 +975,13 @@ body {
 }
 
 .real-estate-links ul {
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .common-link-content {
     font-size: 12px;
-    margin: 10px 30px 0 0;
+    margin-top: 10px;
     list-style: none;
 }
 
@@ -813,7 +993,7 @@ body {
 /* REAL ESTATE AGENT */
 .real-estate-agent-container {
     background-color: #FFF8F6;
-    padding: 95px 200px;
+    padding: 70px 200px;
     border-radius: 24px;
 }
 
@@ -855,6 +1035,7 @@ body {
     border-radius: 24px;
     margin-top: 20px;
     padding: 24px 48px;
+    width: 100%;
 }
 
 .footer-logo-container {
@@ -896,17 +1077,20 @@ body {
     color: #FFFFFF;
     font-weight: 500;
     opacity: 0.47;
+    font-size: 14px;
 }
 
 .subscribe-input-container {
     color: #FFFFFF;
     width: fit-content;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
 }
 
 .subscribe-input-box {
     border: none;
-    padding: 0 80px 20px 0;
+    padding: 0 160px 20px 0;
+    width: 100%;
     background-color: #1A1A1A;
     font-size: 12px;
     outline: none;
@@ -928,6 +1112,8 @@ body {
     border-radius: 44px;
     font-size: 12px;
     padding: 10px 20px;
+    position: absolute;
+    right: 0;
 }
 
 .subscribe-description {
@@ -996,8 +1182,8 @@ body {
 }
 
 .apple-google-icon-wrapper {
-    padding-right: 15px;
-    margin-right: 10px;
+    padding-right: 5px;
+    margin-right: 5px;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1024,23 +1210,44 @@ body {
 /* MEDIA QUERIES */
 @media(max-width : 1262px) {
     .homes-for-you-container {
-        padding: 140px 50px;
+        padding: 70px 50px;
+    }
+
+    .find-properties-container {
+        padding: 70px 50px;
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    .discover-links a {
+        font-size: 10px;
+    }
+
+    .common-font-12 {
+        font-size: 12px;
+    }
+
+    .common-font-10,
+    .copyright {
+        font-size: 10px;
     }
 }
 
 @media(max-width : 1202px) {
     .article-news-container {
-        padding: 140px 80px;
+        padding: 100px 80px;
     }
 
     .best-properties-container {
-        padding: 140px 80px;
+        padding: 100px 80px;
     }
 }
 
 @media(max-width : 1148px) {
     .real-estate-container {
-        padding: 140px 80px;
+        padding: 70px;
     }
 
     .common-link-content {
@@ -1064,17 +1271,13 @@ body {
 
 @media(max-width : 1082px) {
     .article-news-container {
-        padding: 140px 50px;
+        padding: 100px 30px;
     }
 }
 
 @media(max-width : 1026.98px) {
-    .article-news-container {
-        padding: 140px 30px;
-    }
-
     .best-properties-container {
-        padding: 140px 50px;
+        padding: 100px 50px;
     }
 }
 
@@ -1083,10 +1286,20 @@ body {
         background-color: #000000;
         position: fixed;
         top: 0;
+        padding: 0;
+    }
+
+    .navlink-color, .nav-dropdown, .property-btn {
+        font-size: 11px;
     }
 
     .hero-img {
         height: 100vh;
+        border-radius: 24px;
+    }
+
+    .choose-us-container {
+        padding: 70px 100px;
     }
 
     .choose-us-common {
@@ -1094,7 +1307,7 @@ body {
     }
 
     .article-news-container {
-        padding: 140px;
+        padding: 100px 45px;
     }
 
     .article-news-card-container {
@@ -1102,7 +1315,7 @@ body {
     }
 
     .luxury-homes-container {
-        padding: 100px 60px;
+        padding: 100px;
     }
 
     .numbers-container-col {
@@ -1110,11 +1323,19 @@ body {
     }
 
     .customers-container {
-        padding: 140px 70px;
+        padding: 70px;
     }
 
     .best-properties-container {
-        padding: 140px 30px;
+        padding: 100px 30px;
+    }
+
+    .find-properties-container {
+        padding: 70px 0;
+    }
+
+    .input-margin-991 {
+        margin-bottom: 50px;
     }
 }
 
@@ -1124,17 +1345,17 @@ body {
     }
 
     .real-estate-agent-container {
-        padding: 95px 150px;
+        padding: 70px 150px;
     }
 }
 
 @media(max-width : 879.98px) {
     .real-estate-container {
-        padding: 140px 30px;
+        padding: 70px 30px;
     }
 
     .real-estate-agent-container {
-        padding: 95px 120px;
+        padding: 70px 120px;
     }
 
     .properties-arrow {
@@ -1143,9 +1364,9 @@ body {
     }
 }
 
-@media(max-width : 833px) {
+@media(max-width : 845.98px) {
     .luxury-homes-container {
-        padding: 100px 30px;
+        padding: 100px 50px;
     }
 
     .properties-description {
@@ -1158,29 +1379,29 @@ body {
 }
 
 
-@media(max-width : 768px) {
-    .article-news-container {
-        padding: 140px 40px;
+@media(max-width : 768.98px) {
+    .search-bar input {
+        max-width: 70%;
+    }
+
+    .search-icon-container {
+        right: 16%;
+    }
+
+    .choose-us-container {
+        padding: 70px 40px;
     }
 
     .real-estate-agent-container {
-        padding: 95px 80px;
+        padding: 70px 80px;
     }
 
-    .luxury-homes-container {
-        padding: 100px 140px;
-    }
-
-    .luxury-heading1 {
+    .luxury-heading {
         margin-top: 20px;
     }
 
-    .luxury-content-container {
-        text-align: center;
-    }
-
     .customers-container {
-        padding: 140px 70px;
+        padding: 40px 30px;
     }
 
     .customers-col1,
@@ -1195,23 +1416,33 @@ body {
     .properties-col2 {
         margin-top: 20px;
     }
-
 }
 
 @media(max-width : 767.98px) {
-    .customers-container {
-        padding: 140px;
+    .luxury-homes-container {
+        padding: 100px 40px;
+    }
+
+    .luxury-heading {
+        font-size: 22px;
+    }
+
+    .luxury-description {
+        font-size: 12px;
+    }
+
+    .find-property-common-margin {
+        margin-bottom: 24px;
     }
 }
 
 @media(max-width : 682.98px) {
     .homes-for-you-container {
-        padding: 140px 120px;
+        padding: 70px 100px;
     }
 
-    .agent-container {
-        flex-direction: column;
-        gap: 20px;
+    .real-estate-agent-container {
+        padding: 70px 25px;
     }
 }
 
@@ -1223,57 +1454,85 @@ body {
     .form-input-box {
         max-width: 80%;
     }
-}
 
-@media(max-width : 607.98px) {
-    .choose-us-container {
-        padding: 140px 80px;
+    .customers-container {
+        padding: 40px 15px;
     }
 }
 
 @media(max-width : 575.98px) {
     .article-news-container {
-        padding: 140px 100px;
+        padding: 100px 70px;
     }
 
     .common-links {
         font-size: 13px;
     }
+
+    .find-property-common-margin2 {
+        margin-bottom: 24px;
+    }
+
+    .footer-container {
+        padding: 20px 40px;
+    }
+    .discover-text {
+        margin: 0;
+    }
+
+    .input-margin-575 {
+        margin-bottom: 30px;
+    }
+    .get-app-text {
+        margin-bottom: 10px;
+    }
+    .our-address-contact {
+        margin-top: 10px;
+        line-height: 20px;
+    }
+
+    .discover-links a {
+        font-size: 12px;
+    }
+
+    .common-font-12 {
+        font-size: 14px;
+    }
+
+    .common-font-10,
+    .copyright {
+        font-size: 12px;
+    }
 }
 
 @media(max-width : 558px) {
     .homes-for-you-container {
-        padding: 140px 80px;
+        padding: 70px 80px;
     }
 
-    .customers-container {
-        padding: 140px 100px;
+    .real-estate-agent-container {
+        padding: 40px 20px;
     }
-}
 
-@media(max-width : 535.98px) {
-    .luxury-homes-container {
-        padding: 100px 70px;
+    .agent-container {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
 @media(max-width : 481.98px) {
     .homes-for-you-container {
-        padding: 140px 55px;
+        padding: 70px 55px;
     }
 
-    .customers-container {
-        padding: 140px 60px;
+    .article-news-container {
+        padding: 100px 30px;
     }
 }
 
 @media(max-width : 449.98px) {
-    .article-news-container {
-        padding: 140px 70px;
-    }
-
     .homes-for-you-container {
-        padding: 140px 40px;
+        padding: 30px 40px;
     }
 
     .name,
@@ -1305,21 +1564,7 @@ body {
 
 @media(max-width : 403px) {
     .homes-for-you-container {
-        padding: 140px 30px;
-    }
-}
-
-@media(max-width : 388.98px) {
-    .article-news-container {
-        padding: 140px 45px;
-    }
-
-    .luxury-homes-container {
-        padding: 100px 50px;
-    }
-
-    .customers-container {
-        padding: 140px 35px;
+        padding: 70px 30px;
     }
 }
 

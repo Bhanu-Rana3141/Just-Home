@@ -11,10 +11,10 @@ export default function FindProperties() {
     return (
         <>
             <Container fluid className='find-properties-container'>
-                <h2 className='heading'>Find Properties in These Cities</h2>
-                <div className='heading-para mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                <Row>
-                    <Col lg={6} md={6} sm={12} className='find-property-parent img1'>
+                <h2 className='heading mb-3'>Find Properties in These Cities</h2>
+                <div className='heading-para mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <Row className='mb-4'>
+                    <Col lg={6} md={6} sm={12} xs={12} className='find-property-parent img1 find-property-common-margin'>
                         <div className='find-property-img'>
                             <img src={findproperties1}></img>
                         </div>
@@ -24,7 +24,7 @@ export default function FindProperties() {
                         </div>
                     </Col>
 
-                    <Col lg={3} md={3} sm={12} className='find-property-parent'>
+                    <Col lg={3} md={3} sm={6} xs={12} className='find-property-parent find-property-common-margin2'>
                         <div className='find-property-img'>
                             <img src={findproperties2}></img>
                         </div>
@@ -34,7 +34,7 @@ export default function FindProperties() {
                         </div>
                     </Col>
 
-                    <Col lg={3} md={3} sm={12} className='find-property-parent'>
+                    <Col lg={3} md={3} sm={6} xs={12} className='find-property-parent'>
                         <div className='find-property-img'>
                             <img src={findproperties3}></img>
                         </div>
@@ -46,17 +46,17 @@ export default function FindProperties() {
                 </Row>
 
                 <Row>
-                    <Col lg={3} md={3} sm={12} className='find-property-parent'>
+                    <Col lg={3} md={3} sm={6} xs={12} className='find-property-parent find-property-common-margin2'>
                         <div className='find-property-img'>
                             <img src={findproperties4}></img>
                         </div>
-                        <div className='find-property-container'>
+                        <div className='find-property-container find-property-common-margin'>
                             <div className='find-property-text'>0 Properties</div>
                             <div className='find-property-place'>San Diego</div>
                         </div>
                     </Col>
 
-                    <Col lg={3} md={3} sm={12} className='find-property-parent'>
+                    <Col lg={3} md={3} sm={6} xs={12} className='find-property-parent find-property-common-margin'>
                         <div className='find-property-img'>
                             <img src={findproperties5}></img>
                         </div>
@@ -66,7 +66,7 @@ export default function FindProperties() {
                         </div>
                     </Col>
 
-                    <Col lg={6} md={6} sm={12} className='find-property-parent'>
+                    <Col lg={6} md={6} sm={12} xs={12} className='find-property-parent'>
                         <div className='find-property-img'>
                             <img src={findproperties6}></img>
                         </div>

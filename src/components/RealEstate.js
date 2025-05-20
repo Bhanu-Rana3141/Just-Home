@@ -60,19 +60,23 @@ export default function RealEstate() {
                 </Col>
             </Row>
 
-            <div className='real-estate-flex-wrapper'>
-                {[...Array(5)].map((_, index) => (
-                    <div className='real-estate-links' key={index}>
-                        <ul className='common-link-containter'>
-                            {dataMap[activeTab].map((text, idx) => (
-                                <li className='common-link-content' key={idx}>
-                                    <Link to=''>{text}</Link>
-                                </li>
-                            ))}
-                        </ul>
+            <Row>
+                <Col>
+                    <div className='real-estate-flex-wrapper'>
+                        {[...Array(5)].map((_, index) => (
+                            <div className='real-estate-links' key={index}>
+                                <ul className='common-link-containter'>
+                                    {dataMap[activeTab].map((text, idx) => (
+                                        <li className='common-link-content' key={idx}>
+                                            <Link to=''>{text}</Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
+                </Col>
+            </Row>
         </Container>
     );
 }

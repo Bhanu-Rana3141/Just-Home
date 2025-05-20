@@ -32,20 +32,20 @@ export default function Footer() {
             </Row>
 
             <Row className='mt-5'>
-                <Col lg={4}>
+                <Col lg={3} md={12} sm={7} xs={12} className='input-margin-991'>
                     <div className='subscribe-container'>
-                        <div className='subscribe-text'>Subscribe</div>
+                        <div className='subscribe-text common-font-12'>Subscribe</div>
                         <div className='mt-4 subscribe-input-container'>
-                            <input className='subscribe-input-box' placeholder='Your e-mail'></input>
-                            <button className='subscribe-btn'>Send <span><FaArrowRightLong /></span></button>
+                            <input className='subscribe-input-box common-font-10' placeholder='Your e-mail'></input>
+                            <button className='subscribe-btn common-font-10'>Send <span><FaArrowRightLong /></span></button>
                         </div>
-                        <div className='mt-4 subscribe-description'>Subscribe to our newsletter to receive our weekly feed.</div>
+                        <div className='mt-4 subscribe-description common-font-10'>Subscribe to our newsletter to receive our weekly feed.</div>
                     </div>
                 </Col>
 
-                <Col lg={1}>
+                <Col lg={1} md={2} sm={2} xs={6} className='input-margin-575'>
                     <div className='discover-container'>
-                        <div className='discover-text'>Discover</div>
+                        <div className='discover-text common-font-12'>Discover</div>
                         <ul className='discover-links'>
                             <li><Link to=''>Miami</Link></li>
                             <li><Link to=''>New York</Link></li>
@@ -57,9 +57,9 @@ export default function Footer() {
                     </div>
                 </Col>
 
-                <Col lg={1}>
+                <Col lg={2} md={2} sm={3} xs={6} className='input-margin-575'>
                     <div className='discover-container'>
-                        <div className='discover-text'>Quick Links</div>
+                        <div className='discover-text common-font-12'>Quick Links</div>
                         <ul className='discover-links'>
                             <li><Link to=''>About</Link></li>
                             <li><Link to=''>Contact</Link></li>
@@ -72,36 +72,36 @@ export default function Footer() {
                     </div>
                 </Col>
 
-                <Col lg={2}>
+                <Col lg={2} md={2} sm={3} xs={6} className='input-margin-575'>
                     <div className='contact-us-container'>
-                        <div className='discover-text'>Contact Us</div>
+                        <div className='discover-text common-font-12'>Contact Us</div>
                         <div className='discover-links'>
-                            <div><Link to=''>hi@justhome.com</Link></div>
-                            <div><Link to=''>(123) 456-7890</Link></div>
+                            <div><Link className='common-font-10' to=''>hi@justhome.com</Link></div>
+                            <div><Link className='common-font-10' to=''>(123) 456-7890</Link></div>
                         </div>
                     </div>
                 </Col>
 
-                <Col lg={2}>
+                <Col lg={2} md={2} sm={3} xs={6} className='input-margin-575'>
                     <div className='our-address-container'>
-                        <div className='discover-text'>Our Address</div>
+                        <div className='discover-text common-font-12'>Our Address</div>
                         <div className='our-address-contact'>
-                            <div className=''>99 Fifth Avenue, 3rd Floor San Francisco, CA 1980</div>
+                            <div className='common-font-10'>99 Fifth Avenue, 3rd Floor San Francisco, CA 1980</div>
                         </div>
                     </div>
                 </Col>
 
-                <Col lg={2}>
+                <Col lg={2} md={4} sm={6} xs={12}>
                     <div className='get-app-container'>
-                        <div className='discover-text'>Get the app</div>
+                        <div className='discover-text common-font-12 get-app-text'>Get the app</div>
                         <div>
                             <div className='apple-container'>
                                 <div className='apple-google-icon-wrapper'>
-                                    <Link to=''><FaApple className='apple-google-icon' size={23} /></Link>
+                                    <Link to=''><FaApple className='apple-google-icon' size={20} /></Link>
                                 </div>
                                 <div>
-                                    <div className='download-link'><Link>Download on the</Link></div>
-                                    <div className='store-link'><Link>Apple Store</Link></div>
+                                    <div className='download-link common-font-10'><Link>Download on the</Link></div>
+                                    <div className='store-link common-font-12'><Link>Apple Store</Link></div>
                                 </div>
                             </div>
                             <div className='google-container'>
@@ -109,8 +109,8 @@ export default function Footer() {
                                     <Link to=''><FaGooglePlay className='apple-google-icon' size={20} /></Link>
                                 </div>
                                 <div>
-                                    <div className='download-link'><Link>Download on the</Link></div>
-                                    <div className='store-link'><Link>Google Play</Link></div>
+                                    <div className='download-link common-font-10'><Link>Download on the</Link></div>
+                                    <div className='store-link common-font-12'><Link>Google Play</Link></div>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +118,7 @@ export default function Footer() {
                 </Col>
             </Row>
 
-            <Row className='mt-5'>
+            <Row className='mt-4'>
                 <Col lg={12} md={12} sm={12}>
                     <div className='copyright-container'>
                         <div className="copyright">Copyright &copy; 2024. JustHome</div>

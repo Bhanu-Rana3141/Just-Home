@@ -46,9 +46,9 @@ export default function NavigationBar() {
                                     id={`nav-dropdown-${name.toLowerCase()}`}
                                     key={name}
                                 >
-                                    <NavDropdown.Item href={`${href}/action1`}>Action 1</NavDropdown.Item>
-                                    <NavDropdown.Item href={`${href}/action2`}>Action 2</NavDropdown.Item>
-                                    <NavDropdown.Item href={`${href}/action3`}>Action 3</NavDropdown.Item>
+                                    <NavDropdown.Item className='nav-dropdown' href={`${href}/action1`}>Action 1</NavDropdown.Item>
+                                    <NavDropdown.Item className='nav-dropdown' href={`${href}/action2`}>Action 2</NavDropdown.Item>
+                                    <NavDropdown.Item className='nav-dropdown' href={`${href}/action3`}>Action 3</NavDropdown.Item>
                                 </NavDropdown>
                             ) : (
                                 <Nav.Link href={href} key={name} className="navlink-color">

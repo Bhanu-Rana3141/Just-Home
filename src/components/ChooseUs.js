@@ -12,7 +12,7 @@ export default function ChooseUs() {
                 <h2 className='heading'>Why Choose Us</h2>
                 <div className='heading-para mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 <Row>
-                    <Col lg={3} md={6} sm={12}>
+                    <Col lg={3} md={6} sm={6}>
                         <div className='choose-us-common'>
                             <img src={choose1} alt='' className='mb-4'></img>
                             <div className='choose-us-heading mb-3'>Find your future home</div>
@@ -20,7 +20,7 @@ export default function ChooseUs() {
                                 smart real estate experience</div>
                         </div>
                     </Col>
-                    <Col lg={3} md={6} sm={12}>
+                    <Col lg={3} md={6} sm={6}>
                         <div className='choose-us-common'>
                             <img src={choose2} alt='' className='mb-4'></img>
                             <div className='choose-us-heading mb-3'>Experienced agents</div>
@@ -28,14 +28,14 @@ export default function ChooseUs() {
                                 market best</div>
                         </div>
                     </Col>
-                    <Col lg={3} md={6} sm={12}>
+                    <Col lg={3} md={6} sm={6}>
                         <div className='choose-us-common'>
                             <img src={choose3} alt='' className='mb-4'></img>
                             <div className='choose-us-heading mb-3'>Buy or rent homes</div>
                             <div className='choose-us-content-line'>Millions of houses and apartments in your
                                 favourite cities</div>
                         </div></Col>
-                    <Col lg={3} md={6} sm={12}>
+                    <Col lg={3} md={6} sm={6}>
                         <div className='choose-us-common'>
                             <img src={choose4} alt='' className='mb-4'></img>
                             <div className='choose-us-heading mb-3'>List your own property</div>

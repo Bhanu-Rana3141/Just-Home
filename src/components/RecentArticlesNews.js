@@ -4,8 +4,6 @@ import articleNews1 from '../assets/images/article-news1.jpg'
 import articleNews2 from '../assets/images/article-news2.jpg'
 import articleNews3 from '../assets/images/article-news3.jpg'
 import articleNews4 from '../assets/images/article-news4.jpg'
-import { LuDot } from "react-icons/lu";
-import { FaArrowRightLong } from "react-icons/fa6";
 import ArticleNewsCard from './ArticleNewsCard'
 
 export default function RecentArticlesNews() {
