@@ -17,5 +17,5 @@ export default function RealEstateAgent() {
                 </Col>
             </Row>
         </Container>
-  )
+    )
 }

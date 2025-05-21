@@ -75,7 +75,6 @@ export default function Customers() {
                         </div>
                     </div>
                 </Col>
-
                 <Col lg={5} md={6} sm={6} className='customers-col2'>
                     <Slider ref={sliderRef} {...settings}>
                         {reviews.map((review, index) => (
@@ -103,7 +102,6 @@ export default function Customers() {
                             </div>
                         ))}
                     </Slider>
-
                     <div className='customers-arrow'>
                         <div className='customers-arrows' onClick={() => sliderRef.current?.slickPrev()}>
                             <BsChevronLeft />
@@ -115,12 +113,9 @@ export default function Customers() {
                 </Col>
             </Row>
 
-
             <Row className='customer-container-row2 '>
                 <Col lg={12} md={12} sm={12} xs={12}>
-
                     <div className='row2-description'>Thousands of world’s leading companies trust Space</div>
-
                     <div className="logo-slider-container">
                         <div className="logo-slider-track">
                             {logos.concat(logos).map((logo, index) => (

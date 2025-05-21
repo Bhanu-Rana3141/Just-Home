@@ -58,7 +58,6 @@ export default function NavigationBar() {
                         )}
                     </Nav>
 
-                    {/* Right-side contact info & button */}
                     <div className="property-btn-part">
                         <div className='phone-icon-number'>
                             <CiPhone className='phone-icon' />

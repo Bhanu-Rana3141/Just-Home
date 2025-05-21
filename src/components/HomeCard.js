@@ -1,7 +1,5 @@
 import React from 'react'
 import { CiLocationOn } from "react-icons/ci";
-import { FaBed } from "react-icons/fa6";
-import { FaBath } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import bedImg from '../assets/images/bed.png';
 import bathImg from '../assets/images/bath.png';
