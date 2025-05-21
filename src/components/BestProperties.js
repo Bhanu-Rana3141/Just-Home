@@ -13,6 +13,20 @@ import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 import Slider from 'react-slick'
 
 export default function BestProperties() {
+
+    const sliderRef = useRef(null);
+
+    const images = [properties1, properties1, properties1, properties1, properties1];
+
+    const settings = {
+        dots: false,
+        arrows: false, // We’ll control arrows manually
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
+
     return (
         <Container fluid className='best-properties-container'>
             <h2 className='heading'>Best Properties</h2>
@@ -21,17 +35,37 @@ export default function BestProperties() {
             <Row>
                 <Col lg={6} md={12} sm={12} xs={12}>
                     <Row>
-                        <Col lg={12} md={12} sm={12} xs={12} className='mb-4'>
+                        <Col lg={12} md={12} sm={12} xs={12} className='mb-3'>
                             <div className='properties1-img-parent'>
-                                <div className='best-properties-img1-container common-properties-img-container'>
-                                    <img src={properties1}></img>
-                                </div>
-                                <div className='properties1-left-arrow-container properties1-icon-common-container'>
+
+                                {/* Slider */}
+                                <Slider ref={sliderRef} {...settings}>
+                                    {images.map((img, index) => (
+                                        <div
+                                            key={index}
+                                            className='best-properties-img1-container common-properties-img-container'
+                                        >
+                                            <img src={img} alt={`Slide ${index}`} />
+                                        </div>
+                                    ))}
+                                </Slider>
+
+                                {/* Custom Left Arrow */}
+                                <div
+                                    className='properties1-left-arrow-container properties1-icon-common-container'
+                                    onClick={() => sliderRef.current?.slickPrev()}
+                                >
                                     <BsChevronLeft className='properties1-icon-color' />
                                 </div>
-                                <div className='properties1-right-arrow-container properties1-icon-common-container'>
+
+                                {/* Custom Right Arrow */}
+                                <div
+                                    className='properties1-right-arrow-container properties1-icon-common-container'
+                                    onClick={() => sliderRef.current?.slickNext()}
+                                >
                                     <BsChevronRight className='properties1-icon-color' />
                                 </div>
+
                             </div>
                         </Col>
                     </Row>
@@ -61,7 +95,7 @@ export default function BestProperties() {
                     </Row>
                 </Col>
 
-                <Col lg={6} md={12} sm={12} xs={12} className='margin-top-991'> 
+                <Col lg={6} md={12} sm={12} xs={12} className='margin-top-991'>
                     <div className='properties3-img-parent'>
                         <div className='best-properties-img3-container common-properties-img-container'>
                             <img src={properties3}></img>

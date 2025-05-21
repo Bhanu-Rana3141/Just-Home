@@ -449,8 +449,9 @@ body {
 }
 
 .common-properties-img-container img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .col-card-height-parent {
@@ -460,7 +461,7 @@ body {
 .col-card-part-container {
     background-color: #1A1A1A;
     border-radius: 16px;
-    padding: 30px 20px;
+    padding: 30px;
     height: 100%;
     position: relative;
 }
@@ -493,13 +494,14 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     cursor: pointer;
 }
 
 .properties1-img-parent {
     position: relative;
+    width: 100%;
 }
 
 .properties1-icon-common-container {
@@ -645,19 +647,17 @@ body {
 }
 
 .gradient-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background: linear-gradient(
-    to bottom,
-    #00000000 0%,
-    #1A1A1A1A 10%,
-    #1A1A1ACC 80%
-  );
-  border-radius: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to bottom,
+            #00000000 0%,
+            #1A1A1A1A 10%,
+            #1A1A1ACC 80%);
+    border-radius: 16px;
 }
 
 /* LUXURY HOMES */
@@ -1226,6 +1226,15 @@ body {
     .common-link-content {
         margin-right: 0;
     }
+
+    .col-card-part-container {
+        padding: 10px 20px;
+    }
+
+    .col-card-right-icon-container {
+        bottom: 10px;
+        right: 10px;
+    }
 }
 
 @media(max-width : 1094px) {
@@ -1239,14 +1248,6 @@ body {
 
     .hero-content {
         margin-top: 40px;
-    }
-
-    .col-card-part-container {
-        padding: 10px 15px;
-    }
-    .col-card-right-icon-container {
-        right: 10px;
-        bottom: 10px;
     }
 }
 
@@ -1308,7 +1309,7 @@ body {
     }
 
     .best-properties-container {
-        padding: 100px 50px;
+        padding: 100px 30px;
     }
 
     .find-properties-container {
@@ -1317,6 +1318,15 @@ body {
 
     .input-margin-991 {
         margin-bottom: 50px;
+    }
+
+    .col-card-part-container {
+        padding: 30px;
+    }
+
+    .col-card-right-icon-container {
+        bottom: 30px;
+        right: 30px;
     }
 }
 
@@ -1399,7 +1409,7 @@ body {
     }
 
     .best-properties-container {
-        padding: 100px 30px;
+        padding: 100px 0;
     }
 }
 
@@ -1500,10 +1510,10 @@ body {
         margin-top: 24px;
     }
 
-    .properties3-img-bottom-part  {
+    .properties3-img-bottom-part {
         left: 23px;
     }
-    
+
 }
 
 @media(max-width : 558px) {
@@ -1528,6 +1538,12 @@ body {
 
     .article-news-container {
         padding: 100px 30px;
+    }
+}
+
+@media(max-width : 490px) {
+    .col-card-part-container {
+        margin-bottom: 30px
     }
 }
 
@@ -1566,6 +1582,17 @@ body {
 @media(max-width : 403px) {
     .homes-for-you-container {
         padding: 70px 30px;
+    }
+}
+
+@media(max-width : 375px) {
+    .properties3-bottom-container {
+        gap: 25px;
+    }
+
+    .properties3-common {
+        gap: 5px;
+        padding-right: 10px;
     }
 }
 
