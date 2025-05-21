@@ -5,6 +5,7 @@ import HomeCard from './HomeCard';
 import home1 from '../assets/images/home1.jpg'
 import home2 from '../assets/images/home2.jpg'
 import home3 from '../assets/images/home3.jpg'
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 export default function HomesForYou() {
 
@@ -14,15 +15,29 @@ export default function HomesForYou() {
         { image: home3, btn: 'FOR SALE', btn2: 'FEATURED', name: 'Eaton Garth Penthouse', price: '$180,000', address: '7722 18th Ave, Brooklyn', beds: '4 Beds', baths: '4 Beds', sqrt: '450 sqft' },
     ]
 
+    const CustomPrevArrow = ({ onClick }) => (
+        <div className="custom-arrow custom-prev" onClick={onClick}>
+            <BsChevronLeft />
+        </div>
+    );
+
+    const CustomNextArrow = ({ onClick }) => (
+        <div className="custom-arrow custom-next" onClick={onClick}>
+            <BsChevronRight />
+        </div>
+    );
+
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        nextArrow: <CustomNextArrow />,
+        prevArrow: <CustomPrevArrow />,
         responsive: [
             {
-                breakpoint: 991, 
+                breakpoint: 991,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -31,7 +46,7 @@ export default function HomesForYou() {
                 },
             },
             {
-                breakpoint: 683, 
+                breakpoint: 730,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

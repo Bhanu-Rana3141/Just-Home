@@ -12,7 +12,9 @@ export default function HomeCard({ image, btn, btn2, name, price, duration, addr
         <>
             <div className='card-parent-container'>
                 <div className='card-image-container'>
-                    <Link to=''><img src={image}></img></Link>
+                    <div className='card-image-parent'>
+                        <Link to=''><img src={image}></img></Link>
+                    </div>
                     <button className='btn1'>{btn}</button>
                     {btn2 ? <button className='btn2'>{btn2}</button> : ''}
                 </div>

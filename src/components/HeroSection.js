@@ -8,7 +8,9 @@ export default function HeroSection() {
 
     return (
         <div className="hero-section">
-            <img src={heroImg} alt="Hero" className="hero-img" />
+            <div className='hero-img-container'>
+                <img src={heroImg} alt="Hero" className="hero-img" />
+            </div>
 
             <Container fluid className='hero-container'>
                 <div className='hero-content'>

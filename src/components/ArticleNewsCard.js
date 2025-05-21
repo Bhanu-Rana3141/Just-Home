@@ -6,7 +6,9 @@ export default function ArticleNewsCard( {image, place, date, description, read}
     return (
         <>
             <div className='article-news-card-container'>
-                <img src={image}></img>
+                <div className='article-news-card-container-img'>
+                    <img src={image}></img>
+                </div>
                 <div className='article-news-card-content'>
                     <div className='place-date-container'>
                         <div>{place} <span><LuDot size={20} /></span> </div>
