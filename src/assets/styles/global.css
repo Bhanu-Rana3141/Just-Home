@@ -59,6 +59,10 @@ body {
     color: #FFFFFF;
 }
 
+.nav-dropdown {
+    font-size: 14px;
+}
+
 .property-btn-part {
     display: flex;
     align-items: center;
@@ -1309,7 +1313,7 @@ body {
     }
 
     .best-properties-container {
-        padding: 100px 30px;
+        padding: 70px 30px;
     }
 
     .find-properties-container {
@@ -1409,7 +1413,7 @@ body {
     }
 
     .best-properties-container {
-        padding: 100px 0;
+        padding: 70px 0;
     }
 }
 
@@ -1503,7 +1507,7 @@ body {
     }
 
     .best-properties-container {
-        padding: 100px 0;
+        padding: 70px 0;
     }
 
     .properties2-col-container {

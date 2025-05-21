@@ -20,7 +20,7 @@ export default function BestProperties() {
 
     const settings = {
         dots: false,
-        arrows: false, // We’ll control arrows manually
+        arrows: false, 
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -37,8 +37,6 @@ export default function BestProperties() {
                     <Row>
                         <Col lg={12} md={12} sm={12} xs={12} className='mb-3'>
                             <div className='properties1-img-parent'>
-
-                                {/* Slider */}
                                 <Slider ref={sliderRef} {...settings}>
                                     {images.map((img, index) => (
                                         <div
@@ -49,23 +47,18 @@ export default function BestProperties() {
                                         </div>
                                     ))}
                                 </Slider>
-
-                                {/* Custom Left Arrow */}
                                 <div
                                     className='properties1-left-arrow-container properties1-icon-common-container'
                                     onClick={() => sliderRef.current?.slickPrev()}
                                 >
                                     <BsChevronLeft className='properties1-icon-color' />
                                 </div>
-
-                                {/* Custom Right Arrow */}
                                 <div
                                     className='properties1-right-arrow-container properties1-icon-common-container'
                                     onClick={() => sliderRef.current?.slickNext()}
                                 >
                                     <BsChevronRight className='properties1-icon-color' />
                                 </div>
-
                             </div>
                         </Col>
                     </Row>
