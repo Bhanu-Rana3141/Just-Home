@@ -4,7 +4,8 @@ import { GoSearch } from "react-icons/go";
 import heroImg from '../assets/images/hero-img.jpg'
 
 export default function HeroSection() {
-    const [activeTab, setActiveTab] = useState('rent');
+
+    const [activeTab, setActiveTab] = useState('Sale');
 
     return (
         <div className="hero-section">
@@ -32,9 +33,9 @@ export default function HeroSection() {
                     </div>
 
                     <div className='search-bar'>
-                        <input type='text' placeholder='Enter Name, Keywords...'/>
+                        <input type='text' placeholder='Enter Name, Keywords...' />
                         <div className='search-icon-container'>
-                            <GoSearch className='search-icon'/>
+                            <GoSearch className='search-icon' />
                         </div>
                     </div>
                 </div>

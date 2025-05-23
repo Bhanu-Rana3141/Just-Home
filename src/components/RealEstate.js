@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 export default function RealEstate() {
+
     const [activeTab, setActiveTab] = useState('Real Estate');
 
     const tabs = ['Real Estate', 'New Homes', 'Popular Area', 'Popular Searches'];

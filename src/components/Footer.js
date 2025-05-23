@@ -32,89 +32,85 @@ export default function Footer() {
             </Row>
 
             <Row className='mt-5'>
-                <Col lg={3} md={12} sm={7} xs={12} className='input-margin-991'>
-                    <div className='subscribe-container'>
-                        <div className='subscribe-text common-font-12'>Subscribe</div>
-                        <div className='mt-4 subscribe-input-container'>
-                            <input className='subscribe-input-box common-font-10' placeholder='Your e-mail'></input>
-                            <button className='subscribe-btn common-font-10'>Send <span><FaArrowRightLong /></span></button>
+                <Col lg={4} md={12} sm={12} className='subscribe-container'>
+                    <div className='mb-4 subscribe-text'>Subscribe</div>
+                    <div className='mb-4 input-sendBtn-container'>
+                        <div className='footer-input-container'>
+                            <input className='footer-white-color' type='email' placeholder='Your e-mail'></input>
                         </div>
-                        <div className='mt-4 subscribe-description common-font-10'>Subscribe to our newsletter to receive our weekly feed.</div>
+                        <button className='subscribe-btn'>Send<span className='send-arrow'><FaArrowRightLong /></span></button>
                     </div>
+                    <div className='footer-white-color'>Subscribe to our newsletter to receive our weekly feed.</div>
                 </Col>
-
-                <Col lg={1} md={2} sm={2} xs={6} className='input-margin-575'>
-                    <div className='discover-container'>
-                        <div className='discover-text common-font-12'>Discover</div>
-                        <ul className='discover-links'>
-                            <li><Link to=''>Miami</Link></li>
-                            <li><Link to=''>New York</Link></li>
-                            <li><Link to=''>Chicago</Link></li>
-                            <li><Link to=''>Florida</Link></li>
-                            <li><Link to=''>Los Angeles</Link></li>
-                            <li><Link to=''>San Diego</Link></li>
-                        </ul>
-                    </div>
-                </Col>
-
-                <Col lg={2} md={2} sm={3} xs={6} className='input-margin-575'>
-                    <div className='discover-container'>
-                        <div className='discover-text common-font-12'>Quick Links</div>
-                        <ul className='discover-links'>
-                            <li><Link to=''>About</Link></li>
-                            <li><Link to=''>Contact</Link></li>
-                            <li><Link to=''>FAQ’s</Link></li>
-                            <li><Link to=''>Blog</Link></li>
-                            <li><Link to=''>Pricing Plans</Link></li>
-                            <li><Link to=''>Privacy Policy</Link></li>
-                            <li><Link to=''>Terms & Conditions</Link></li>
-                        </ul>
-                    </div>
-                </Col>
-
-                <Col lg={2} md={2} sm={3} xs={6} className='input-margin-575'>
-                    <div className='contact-us-container'>
-                        <div className='discover-text common-font-12'>Contact Us</div>
-                        <div className='discover-links'>
-                            <div><Link className='common-font-10' to=''>hi@justhome.com</Link></div>
-                            <div><Link className='common-font-10' to=''>(123) 456-7890</Link></div>
+                <Col lg={8} className='footer-col2'>
+                    <div className='footer-links-container'>
+                        <div className='discover-container'>
+                            <div className='discover-text'>Discover</div>
+                            <ul className='discover-links'>
+                                <li><Link to=''>Miami</Link></li>
+                                <li><Link to=''>New York</Link></li>
+                                <li><Link to=''>Chicago</Link></li>
+                                <li><Link to=''>Florida</Link></li>
+                                <li><Link to=''>Los Angeles</Link></li>
+                                <li><Link to=''>San Diego</Link></li>
+                            </ul>
                         </div>
-                    </div>
-                </Col>
 
-                <Col lg={2} md={2} sm={3} xs={6} className='input-margin-575'>
-                    <div className='our-address-container'>
-                        <div className='discover-text common-font-12'>Our Address</div>
-                        <div className='our-address-contact'>
-                            <div className='common-font-10'>99 Fifth Avenue, 3rd Floor San Francisco, CA 1980</div>
+                        <div className='discover-container'>
+                            <div className='discover-text'>Quick Links</div>
+                            <ul className='discover-links'>
+                                <li><Link to=''>About</Link></li>
+                                <li><Link to=''>Contact</Link></li>
+                                <li><Link to=''>FAQ’s</Link></li>
+                                <li><Link to=''>Blog</Link></li>
+                                <li><Link to=''>Pricing Plans</Link></li>
+                                <li><Link to=''>Privacy Policy</Link></li>
+                                <li><Link to=''>Terms & Conditions</Link></li>
+                            </ul>
                         </div>
-                    </div>
-                </Col>
 
-                <Col lg={2} md={4} sm={6} xs={12}>
-                    <div className='get-app-container'>
-                        <div className='discover-text common-font-12 get-app-text'>Get the app</div>
-                        <div>
-                            <div className='apple-container'>
-                                <div className='apple-google-icon-wrapper'>
-                                    <Link to=''><FaApple className='apple-google-icon' size={20} /></Link>
-                                </div>
-                                <div>
-                                    <div className='download-link common-font-10'><Link>Download on the</Link></div>
-                                    <div className='store-link common-font-12'><Link>Apple Store</Link></div>
-                                </div>
+                        <div className='contact-us-container'>
+                            <div className='discover-text'>Contact Us</div>
+                            <div className='discover-links'>
+                                <div><Link className='' to=''>hi@justhome.com</Link></div>
+                                 <div><Link className='' to=''>(123) 456-7890</Link></div>
                             </div>
-                            <div className='google-container'>
-                                <div className='apple-google-icon-wrapper'>
-                                    <Link to=''><FaGooglePlay className='apple-google-icon' size={20} /></Link>
+                        </div>
+
+                        <div className='our-address-container'>
+                            <div className='discover-text'>Our Address</div>
+                            <div className='our-address-contact'>
+                                <div className='address-app-text'>99 Fifth Avenue, 3rd Floor San Francisco, CA 1980</div>
+                            </div>
+                        </div>
+
+                        <div className='get-app-container'>
+                            <div className='discover-text get-app-text'>Get the app</div>
+                            <div className='apple-google-container'>
+                                <div className='apple-google-common'>
+                                    <div className='apple-google-icon-wrapper'>
+                                        <Link to=''><FaApple className='apple-google-icon' size={20} /></Link>
+                                    </div>
+                                    <div className='apple-google-border'></div>
+                                    <div>
+                                        <div className='download-link download-store-common-links '><Link>Download on the</Link></div>
+                                        <div className='store-link download-store-common-links'><Link>Apple Store</Link></div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <div className='download-link common-font-10'><Link>Download on the</Link></div>
-                                    <div className='store-link common-font-12'><Link>Google Play</Link></div>
+                                <div className='apple-google-common google-container '>
+                                    <div className='apple-google-icon-wrapper'>
+                                        <Link to=''><FaGooglePlay className='apple-google-icon' size={20} /></Link>
+                                    </div>
+                                    <div className='apple-google-border'></div>
+                                    <div>
+                                        <div className='download-link download-store-common-links'><Link>Download on the</Link></div>
+                                        <div className='store-link download-store-common-links'><Link>Google Play</Link></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </Col>
             </Row>
 

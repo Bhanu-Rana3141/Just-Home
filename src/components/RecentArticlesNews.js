@@ -10,7 +10,7 @@ export default function RecentArticlesNews() {
     return (
         <Container fluid className='article-news-container'>
             <h2 className='heading'>Recent Articles & News</h2>
-            <div className='heading-para mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div className='heading-para heading-para-article'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 
             <Row>
                 <Col lg={3} md={6} sm={6}>

@@ -59,7 +59,7 @@ export default function Customers() {
         <Container fluid className='customers-container'>
             <Row className='customer-container-row1 justify-content-between'>
                 <Col lg={5} md={6} sm={6} className='customers-col1'>
-                    <h2 className='customer-common-color'>What our customers are saying us?</h2>
+                    <h2 className='customer-common-color customer-text-heading'>What our customers are saying us?</h2>
                     <div className='customers-col1-description customer-common-color'>
                         Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.
                     </div>
@@ -112,6 +112,8 @@ export default function Customers() {
                     </div>
                 </Col>
             </Row>
+
+            <div className='customer-border-bottom'></div>
 
             <Row className='customer-container-row2 '>
                 <Col lg={12} md={12} sm={12} xs={12}>

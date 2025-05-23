@@ -11,8 +11,8 @@ export default function FindProperties() {
     return (
         <>
             <Container fluid className='find-properties-container'>
-                <h2 className='heading mb-3'>Find Properties in These Cities</h2>
-                <div className='heading-para mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <h2 className='heading'>Find Properties in These Cities</h2>
+                <div className='heading-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 <Row className='mb-4'>
                     <Col lg={6} md={6} sm={12} xs={12} className='find-property-parent img1 find-property-common-margin'>
                         <div className='find-property-img'>

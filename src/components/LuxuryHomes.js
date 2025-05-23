@@ -32,12 +32,12 @@ export default function LuxuryHomes() {
                 </Col>
                 <Col lg={5} md={5} sm={6} xs={12}>
                     <div className='luxury-content-container'>
-                        <h2 className='luxury-heading'>Local expertise for luxury homes</h2>
+                        <h2 className='luxury-heading'>Local expertise for <span className="responsive-br"><br /></span> luxury homes</h2>
                         <div className='mt-3 luxury-description'>
                             Pellentesque egestas elementum egestas faucibus sem. Velit nunc egestas ut
                             morbi. Leo diam diam nibh eget fermentum massa pretium. Mi mauris nulla acdictum ut mauris non.
                         </div>
-                        <button className='mt-3 agent-register-btn'>
+                        <button className='mt-3 agent-register-btn learn-more-btn'>
                             Learn More <FaArrowRightLong />
                         </button>
                     </div>

@@ -30,7 +30,7 @@ export default function BestProperties() {
     return (
         <Container fluid className='best-properties-container'>
             <h2 className='heading'>Best Properties</h2>
-            <div className='heading-para mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div className='heading-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 
             <Row>
                 <Col lg={6} md={12} sm={12} xs={12}>

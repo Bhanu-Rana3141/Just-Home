@@ -10,11 +10,11 @@ export default function ChooseUs() {
         <>
             <Container fluid className='choose-us-container'>
                 <h2 className='heading'>Why Choose Us</h2>
-                <div className='heading-para mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div className='heading-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 <Row>
                     <Col lg={3} md={6} sm={6}>
                         <div className='choose-us-common'>
-                            <div className='mb-4'>
+                            <div className='mb-4 choose-us-common-img'>
                                 <img src={choose1} alt=''></img>
                             </div>
                             <div className='choose-us-heading mb-3'>Find your future home</div>
@@ -24,7 +24,7 @@ export default function ChooseUs() {
                     </Col>
                     <Col lg={3} md={6} sm={6}>
                         <div className='choose-us-common'>
-                            <div className='mb-4'>
+                            <div className='mb-4 choose-us-common-img'>
                                 <img src={choose2} alt=''></img>
                             </div>
                             <div className='choose-us-heading mb-3'>Experienced agents</div>
@@ -34,7 +34,7 @@ export default function ChooseUs() {
                     </Col>
                     <Col lg={3} md={6} sm={6}>
                         <div className='choose-us-common'>
-                            <div className='mb-4'>
+                            <div className='mb-4 choose-us-common-img'>
                                 <img src={choose3} alt=''></img>
                             </div>
                             <div className='choose-us-heading mb-3'>Buy or rent homes</div>
@@ -43,7 +43,7 @@ export default function ChooseUs() {
                         </div></Col>
                     <Col lg={3} md={6} sm={6}>
                         <div className='choose-us-common'>
-                            <div className='mb-4'>
+                            <div className='mb-4 choose-us-common-img'>
                                 <img src={choose4} alt=''></img>
                             </div>
                             <div className='choose-us-heading mb-3'>List your own property</div>

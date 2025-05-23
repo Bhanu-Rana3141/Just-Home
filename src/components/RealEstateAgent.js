@@ -12,7 +12,7 @@ export default function RealEstateAgent() {
                             <div className='agent-content-heading'>Become a Real Estate Agent</div>
                             <div className='mt-2 agent-content-description'>We only work with the best companies around the globe</div>
                         </div>
-                        <button className='agent-register-btn'>Register Now <span><FaArrowRightLong /></span> </button>
+                        <button className='agent-register-btn real-estate-btn'>Register Now <span><FaArrowRightLong /></span> </button>
                     </div>
                 </Col>
             </Row>

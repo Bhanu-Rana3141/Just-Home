@@ -60,8 +60,8 @@ export default function HomesForYou() {
     return (
         <>
             <Container fluid className='homes-for-you-container'>
-                <h2 className='heading mb-3'>Homes For You</h2>
-                <div className='heading-para mb-4'>Based on your view history</div>
+                <h2 className='heading'>Homes For You</h2>
+                <div className='heading-para'>Based on your view history</div>
                 <Slider {...settings}>
                     {cardData.map((card, index) => (
                         <div className='homes-card-container-parent' key={index}>
